@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API = axios.create({
+const API
+ = axios.create({
   baseURL: "https://node-eco.vercel.app/",
   withCredentials: true, // دا عشان نبعت الريفريش توكن اللى فى الكوكيز مع الريكويست
 });
