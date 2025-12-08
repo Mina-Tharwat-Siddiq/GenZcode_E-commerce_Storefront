@@ -1,0 +1,29 @@
+.logout-page {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-content {
+    text-align: center;
+}
+
+.logout-content i {
+    font-size: 64px;
+    color: #F1AE60;
+    margin-bottom: 20px;
+}
+
+.logout-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.logout-content p {
+    font-size: 16px;
+    color: #666;
+}
+

@@ -1,0 +1,158 @@
+.orders-page {
+    width: 100%;
+}
+
+.page-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.empty-orders {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-orders i {
+    font-size: 64px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.empty-orders p {
+    font-size: 18px;
+    color: #666;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.order-item-image {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #F1AE60;
+    border: 1px solid #eee;
+}
+
+.order-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order-item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.order-item-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+.order-item-date {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.order-item-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.order-status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.order-status.processing {
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+.order-status.completed {
+    color: #28a745;
+    background-color: #d4edda;
+}
+
+.order-item-actions {
+    display: flex;
+    align-items: center;
+}
+.order-item-actions > button:hover{
+    background-color: #F1AE60;
+    transition: .3s linear;
+    color: white;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.view-item-btn {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.view-item-btn:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .order-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .order-item-actions {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .view-item-btn {
+        width: 100%;
+    }
+    .order-item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+}
+
