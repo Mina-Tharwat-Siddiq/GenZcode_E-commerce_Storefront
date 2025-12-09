@@ -221,7 +221,7 @@ function Home() {
                         </button>
                     </div>
 
-                    {/* بدل ما تعرض featuredProducts بس في كل الحالات */}
+                   
                     {loading ? (
                         <div className="text-center py-5">
                             <div className="spinner-border" role="status">
@@ -230,7 +230,6 @@ function Home() {
                         </div>
                     ) : (
                         <div className="featured-products-grid">
-                            {/* هنا السحر: بيعرض اللي إنت مختاره من التبويب */}
                             {(activeTab === 'featured' ? featuredProducts : latestProducts).length > 0 ? (
                                 (activeTab === 'featured' ? featuredProducts : latestProducts).map(product => (
                                     <ProductCard key={product._id} product={product} />
